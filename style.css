@@ -28,8 +28,13 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.card__result {
+.card__image {
   max-width: 375px;
+  height: 30vh;
+  background: url(./images/bg-main-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem 1rem 2rem 6rem;
 }
 
 .img__position{
@@ -50,6 +55,14 @@ body {
   left: 79%;
   color: #fff;
   letter-spacing: 0.15rem;
+  font-size: 12px;
+}
+.card__front{
+  position: relative;
+  top: -4.1rem;
+  right: 3.5rem;
+  /* margin-top: -3.8rem; */
+  /* margin-left: -3rem; */
 }
 /* card back end */
 
@@ -58,6 +71,11 @@ body {
 .card__info__sec {
   position: relative;
 }
+.card__logo{
+  margin-top: .3rem;
+  width: 50px;
+  
+}
 .card__info {
   position: absolute;
   top: 6%;
@@ -65,15 +83,17 @@ body {
   width: 85%;
 }
 .card__number {
-  margin-top: 1.2rem;
+  margin-top: 1rem;
   margin-bottom: 0.2rem;
-  letter-spacing: 0.25rem;
-  font-size: 1.375rem;
+  letter-spacing: 0.1rem;
+  font-size:18px;
   
 }
 .card__owenr {
-  margin-top: 1.2rem;
-  letter-spacing: 0.1rem;
+  margin-top: 0.5rem;
+  letter-spacing: 0.05rem;
   text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 1.5rem;
 }
 /* card front end */
