@@ -21,6 +21,8 @@ const card_cvc=document.getElementsByClassName('card__back-cvc')[0];
 const btn_confirm=document.getElementById('confirm');
 const inp_cvc=document.getElementById('cvc');
 
+const bank_logo=document.getElementsByClassName("bank__logo")[0];
+
 function run(){
     let arrCardNumber=[];
     arrCardNumber= card_number.value;
@@ -28,7 +30,58 @@ function run(){
     card__number_sec2.textContent=arrCardNumber.slice(4,8);
     card__number_sec3.textContent=arrCardNumber.slice(8,12);
     card__number_sec4.textContent=arrCardNumber.slice(12,17);
-    
+    if(arrCardNumber.slice(0,6)==="610433"){
+        bank_logo.src="./images/mellat.svg";
+    }
+    else if(arrCardNumber.slice(0,6)==="627353"){
+        bank_logo.src="./images/tejaret.svg";
+        
+    }
+    else if(arrCardNumber.slice(0,6)==="603769"){
+        bank_logo.src="./images/saderat.svg";
+        
+    }
+    else if(arrCardNumber.slice(0,6)==="603799"){
+        bank_logo.src="./images/meli.svg";
+        
+    }
+    else if(arrCardNumber.slice(0,6)==="589210"){
+        bank_logo.src="./images/sepah.svg";
+        
+    }
+    else if(arrCardNumber.slice(0,6)==="603770"){
+        bank_logo.src="./images/keshaverzi.svg";
+        
+    }
+    else if(arrCardNumber.slice(0,6)==="628023"){
+        bank_logo.src="./images/meskan.svg";
+        
+    }
+    else if(arrCardNumber.slice(0,6)==="589463"){
+        bank_logo.src="./images/refah.svg";
+        
+    }
+    else if(arrCardNumber.slice(0,6)==="627412"){
+        bank_logo.src="./images/eghtesad.svg";
+        
+    }
+    else if(arrCardNumber.slice(0,6)==="622106"){
+        bank_logo.src="./images/parsiyan.svg";
+        
+    }
+    else if(arrCardNumber.slice(0,6)==="502229"){
+        bank_logo.src="./images/pasargard.svg";
+        
+    }
+    else if(arrCardNumber.slice(0,6)==="621986"){
+        bank_logo.src="./images/saman.svg";
+        
+    }
+    else{
+        bank_logo.src="./images/gardeshgari.svg";
+
+    }
+
     
     
     text__card__owenr_name.textContent=card_name.value;

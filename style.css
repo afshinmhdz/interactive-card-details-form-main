@@ -32,6 +32,10 @@ body {
   border-radius: 5px;
   margin: 2rem 0;
 }
+.logo{
+  display: flex;
+  justify-content: space-between;
+}
 .card__result{
   max-width: 375px;
   margin: 0 auto;
@@ -81,7 +85,8 @@ body {
 }
 .card__logo{
   margin-top: .3rem;
-  width: 50px;
+  width: 36px;
+  height: 36px;
 }
 .card__info {
   position: absolute;
